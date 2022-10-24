@@ -3,7 +3,7 @@
     "address": "0xd00ae08403B9bbb9124bB305C09058E32C39A48c",
     "name:": "Wrapped Avax",
     "symbol": "wAVAX",
-    "chain": 43113
+    "chainId": 43113
   },
   {
     "address": "0x950C6F4F97DD62bd3cA76f084663224FD2E6b555",
