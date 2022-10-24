@@ -13,57 +13,57 @@ import TronTokens from "./build/728126428-tokens.json";
 import TronFreshTokens from "./build/728126428-fresh-tokens.json";
 
 export type Token = {
-    chainId: number;
-    address: string;
-    decimals: number;
-    name: string;
-    symbol: string;
-    logoURI?: string;
+  chainId: number;
+  address: string;
+  decimals: number;
+  name: string;
+  symbol: string;
+  logoURI?: string;
 };
 
 export const TOKEN_LIST: Record<number | string, Token[]> = {
-    // avalanche
-    43114: AvalancheTokens,
-    avalanche: AvalancheTokens,
-    // celo
-    42220: CeloTokens,
-    celo: CeloTokens,
-    // alfajores
-    44787: AlfajoresTokens,
-    alfajores: AlfajoresTokens,
-    // polygon
-    137: PolygonTokens,
-    polygon: PolygonTokens,
-    // gnosis
-    100: GnosisTokens,
-    gnosis: GnosisTokens,
-    // optimism
-    10: OptimismTokens,
-    optimism: OptimismTokens,
-    // tron
-    728126428: TronTokens,
-    tron: TronTokens,
+  // avalanche
+  43114: AvalancheTokens,
+  avalanche: AvalancheTokens,
+  // celo
+  42220: CeloTokens,
+  celo: CeloTokens,
+  // alfajores
+  44787: AlfajoresTokens,
+  alfajores: AlfajoresTokens,
+  // polygon
+  137: PolygonTokens,
+  polygon: PolygonTokens,
+  // gnosis
+  100: GnosisTokens,
+  gnosis: GnosisTokens,
+  // optimism
+  10: OptimismTokens,
+  optimism: OptimismTokens,
+  // tron
+  728126428: TronTokens,
+  tron: TronTokens,
 };
 
 export const FRESH_TOKEN_LIST: Record<number | string, Token[]> = {
-    // celo
-    42220: CeloFreshTokens,
-    celo: CeloFreshTokens,
-    // gnosis
-    100: GnosisFreshTokens,
-    gnosis: GnosisFreshTokens,
-    // polygon
-    137: PolygonFreshTokens,
-    polygon: PolygonFreshTokens,
-    // avalanche
-    43114: AvalancheFreshTokens,
-    avalanche: AvalancheFreshTokens,
-    // optimism
-    10: OptimismFreshTokens,
-    optimism: OptimismFreshTokens,
-    // tron
-    728126428: TronFreshTokens,
-    tron: TronFreshTokens,
-}
+  // celo
+  42220: CeloFreshTokens,
+  celo: CeloFreshTokens,
+  // gnosis
+  100: GnosisFreshTokens,
+  gnosis: GnosisFreshTokens,
+  // polygon
+  137: PolygonFreshTokens,
+  polygon: PolygonFreshTokens,
+  // avalanche
+  43114: AvalancheFreshTokens,
+  avalanche: AvalancheFreshTokens,
+  // optimism
+  10: OptimismFreshTokens,
+  optimism: OptimismFreshTokens,
+  // tron
+  728126428: TronFreshTokens,
+  tron: TronFreshTokens,
+};
 
 export default TOKEN_LIST;
