@@ -72,7 +72,8 @@ const RPC_URL = {
   // polygon
   137: "https://rpc.ankr.com/polygon",
   // avalanche
-  43114: "https://rpc.ankr.com/avalanche",
+  43114: "https://api.avax.network/ext/bc/C/rpc",
+  43113: "https://api.avax-test.network/ext/bc/C/rpc",
   // optimism
   10: "https://rpc.ankr.com/optimism",
   // tron
@@ -351,7 +352,7 @@ async function tronUniV1Scan() {
   });
 }
 
-async function run(networkId) {
+async function run(networkId, generateFresh = false) {
   for (const chainId in TOKEN_LIST) {
     if (networkId && chainId !== networkId) {
       console.info(`skipping chain ${chainId}`);
@@ -366,17 +367,19 @@ async function run(networkId) {
     const outputFile = `./build/${chainId}-tokens.json`;
     fs.writeFileSync(outputFile, JSON.stringify(tokens, null, 2));
 
-    const freshTokens = await filterFreshTokens(chainId, tokens);
-    if (freshTokens.length) {
-      fs.writeFileSync(
-        `./build/${chainId}-fresh-tokens.json`,
-        JSON.stringify(freshTokens, null, 2)
+    if (generateFresh) {
+      const freshTokens = await filterFreshTokens(chainId, tokens);
+      if (freshTokens.length) {
+        fs.writeFileSync(
+          `./build/${chainId}-fresh-tokens.json`,
+          JSON.stringify(freshTokens, null, 2)
+        );
+      }
+
+      console.info(
+        `chain ${chainId}, ${tokens.length} tokens, ${freshTokens.length} are fresh, output ${outputFile}`
       );
     }
-
-    console.info(
-      `chain ${chainId}, ${tokens.length} tokens, ${freshTokens.length} are fresh, output ${outputFile}`
-    );
   }
   process.exit(0);
 }
