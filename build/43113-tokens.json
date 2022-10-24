@@ -46,5 +46,26 @@
     "symbol": "fujiPNG",
     "decimals": 18,
     "logoURI": "https://raw.githubusercontent.com/pangolindex/tokens/main/assets/43113/0xAF5D473b3f8F96A5B21c6bbB97e09b491335acb9/logo_24.png"
+  },
+  {
+    "address": "0x6e84a6216eA6dACC71eE8E6b0a5B7322EEbC0fDd",
+    "name": "Joe Token",
+    "symbol": "JOE",
+    "chainId": 43113,
+    "decimals": 18
+  },
+  {
+    "address": "0xbA7dEebBFC5fA1100Fb055a87773e1E99Cd3507a",
+    "name": "Dai Stable Coin",
+    "symbol": "DAI",
+    "chainId": 43113,
+    "decimals": 18
+  },
+  {
+    "address": "0xde3A24028580884448a5397872046a019649b084",
+    "name": "Tether USD",
+    "symbol": "USDT",
+    "chainId": 43113,
+    "decimals": 6
   }
 ]

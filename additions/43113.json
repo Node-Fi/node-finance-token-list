@@ -1,0 +1,29 @@
+[
+  {
+    "address": "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7",
+    "name:": "Wrapped Avax",
+    "symbol": "wAVAx",
+    "chain": 43113
+  },
+  {
+    "address": "0x6e84a6216eA6dACC71eE8E6b0a5B7322EEbC0fDd",
+    "name": "Joe Token",
+    "symbol": "JOE",
+    "chainId": 43113,
+    "decimals": 18
+  },
+  {
+    "address": "0xbA7dEebBFC5fA1100Fb055a87773e1E99Cd3507a",
+    "name": "Dai Stable Coin",
+    "symbol": "DAI",
+    "chainId": 43113,
+    "decimals": 18
+  },
+  {
+    "address": "0xde3A24028580884448a5397872046a019649b084",
+    "name": "Tether USD",
+    "symbol": "USDT",
+    "chainId": 43113,
+    "decimals": 6
+  }
+]
