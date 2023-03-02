@@ -14,7 +14,6 @@ const Web3 = require("web3");
 const TOKEN_LIST = {
   // avalanche
   43114: [
-    "https://raw.githubusercontent.com/traderjoe-xyz/joe-tokenlists/main/joe.tokenlist.json",
     "https://raw.githubusercontent.com/sushiswap/default-token-list/master/tokens/avalanche.json",
     "https://raw.githubusercontent.com/pangolindex/tokenlists/main/pangolin.tokenlist.json",
   ],
@@ -53,14 +52,16 @@ const TOKEN_LIST = {
   10: [
     "https://raw.githubusercontent.com/sushiswap/list/master/lists/token-lists/default-token-list/tokens/optimism.json",
     "https://static.optimism.io/optimism.tokenlist.json",
-    "https://data.zipswap.fi/tokenlist.json",
     "https://raw.githubusercontent.com/elkfinance/tokens/main/all.tokenlist.json",
     "https://docs.velodrome.finance/tokenlist.json",
   ],
-  // tron
-  728126428: [
-    "https://list.justswap.link/justswap.json",
-    "https://list.tronalliance.cc/tronalliance.json",
+  // ethereum
+  1: [
+    "https://raw.githubusercontent.com/sushiswap/default-token-list/master/tokens/mainnet.json",
+  ],
+  // Arbitrum
+  42161: [
+    "https://raw.githubusercontent.com/sushiswap/default-token-list/master/tokens/arbitrum.json",
   ],
 };
 
@@ -78,6 +79,10 @@ const RPC_URL = {
   10: "https://rpc.ankr.com/optimism",
   // tron
   728126428: process.env.TRON_JSONRPC_URL,
+  // ethereum
+  1: "https://rpc.ankr.com/eth",
+  // arbitrum
+  42161: "https://rpc.ankr.com/arbitrum",
 };
 
 function validateToken(chainId, token) {
